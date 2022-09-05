@@ -31,7 +31,7 @@ class Stack:
     # Write your code here  
     temp = top
     while temp is not Null:
-      print temp.data
+      print (temp.data)
       temp = temp.next
     print (Null)
 
