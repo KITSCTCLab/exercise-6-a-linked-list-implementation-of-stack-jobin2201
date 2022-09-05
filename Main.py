@@ -30,10 +30,10 @@ class Stack:
     """
     # Write your code here  
     temp = self.head
-    while temp is not Null:
+    while temp is not None:
       print (temp.data)
       temp = temp.next
-    print (Null)
+    print (None)
 
 
 # Do not change the following code
