@@ -31,8 +31,9 @@ class Stack:
     # Write your code here  
     temp = self.head
     while temp is not None:
-      print (temp.data)
+      print (temp.data, end="=>")
       temp = temp.next
+
     print (None)
 
 
