@@ -16,7 +16,7 @@ class Stack:
     else:
      new_Node = Node(data)
      new_Node.next = self.head
-     new_node = self.head
+     self.head = new_Node
 
   def pop(self) -> None:
     # Write your code here
