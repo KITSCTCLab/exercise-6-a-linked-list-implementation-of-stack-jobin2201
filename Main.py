@@ -20,8 +20,8 @@ class Stack:
 
   def pop(self) -> None:
     # Write your code here
-    if top is not None:
-      top = top.next
+    if self.head is not None:
+      self.head = self.head.next
       
 
   def status(self):
@@ -29,7 +29,7 @@ class Stack:
     It prints all the elements of stack.
     """
     # Write your code here  
-    temp = top
+    temp = self.head
     while temp is not Null:
       print (temp.data)
       temp = temp.next
