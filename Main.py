@@ -10,15 +10,31 @@ class Stack:
 
   def push(self, data) -> None:
     # Write your code here
+    if self.head is None:
+      new_Node = Node(data)
+      self.head = new_Node
+    else:
+     new_Node = Node(data)
+     new_Node.next = self.head
+     self.head = new_Node
 
   def pop(self) -> None:
     # Write your code here
+    if self.head is not None:
+      self.head = self.head.next
+      
 
   def status(self):
     """
     It prints all the elements of stack.
     """
     # Write your code here  
+    temp = self.head
+    while temp is not None:
+      print (temp.data, end="=>")
+      temp = temp.next
+
+    print (None)
 
 
 # Do not change the following code
